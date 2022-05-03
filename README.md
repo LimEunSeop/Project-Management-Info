@@ -22,6 +22,7 @@ HTML, CSS, ES6+, Typescript
 - State Management: Mobx vs Recoil
 - Back-end: Firebase or (Nest.js vs Express.js, Prisma ...)
 - DB: PostgreSQL vs MongoDB
+- Testing: Jest, Jest-dom, React Testing Library, Cypress, Cypress Testing Library
 
 ### Work Flow
 
@@ -33,14 +34,36 @@ HTML, CSS, ES6+, Typescript
 - Slack 채널 연동할것: 좀 더 조사 필요
 - 개발 방법론: 비즈니스 로직은 TDD, UI 관련한 것은 완성후 스냅샷 테스팅 & 콜백 호출 테스트, 마지막 통합테스트
 - 할당 방식: 내가 먼저 테스트코드 작성하고 팀원에게 전달할까 생각중
-- 프로젝트 진행 방식: 주 2회(월목, 화금) 만나서 코드리뷰 및 다음 진행할것 회의, 남는시간 코딩. 집에서 주로 코딩하고 회의 내용을 기반으로
+- 프로젝트 진행 방식: 주 2회(월목, 화금) 만나서 코드리뷰 및 다음 진행할것 회의, 남는시간 코딩. 집에서 주로 코딩하고 회의 내용을 기반으로 테스트코드 미리 작성해두기
 - 기술교육: 팀원이 처음 접하는 기술이다 싶으면 샘플 몇개 작성해서 던져주고 익숙해지도록. 관련된 문서 찾아서 주며 시간 점점 줄여나가도록
 - 회의록 작성하기: 회의록 협업에 대한 중요성 기록, 기술적인 깨달음, 갈등 대처 방식 등등..
 
 ## 인프라
+
+일단 소스가 올라갈 서버가 있어야 하고, CI/CD 파이프라인 갖추고, 첨부파일 관리할 서버가 따로 필요할듯.
 
 - CI/CD pipeline: CircleCI ... 등등 서비스 찾아보기
 - Docker Container: 사용하는게 나을까? 나중에 도입해도 좋을듯.
 - Server: Netlify, AWS .... 뭘 사용해야 될까?
 - Storage Service
 - 또 뭐가 있을까? 내일은 이쪽을 좀 더 살펴봐야겠다.
+- Backend: Firebase를 쓸까 AWS Lambda를 쓸까
+
+## 토이프로젝트 인사이트 얻을 수 있는곳
+
+- [https://devfolio.kr](https://devfolio.kr/) : 토이프로젝트 모아보기 서비스
+- [https://bside.best](https://bside.best/), [https://www.depromeet.com](https://www.depromeet.com/) : 팀 빌딩 사이트
+
+## 다음 할 일
+
+1. 너무 중구난방으로 정리해서 뭘 수집해야될지 모르겠다.. 다시 정신차리고 살펴보자. 기획, 저정도면 괜찮고 skills도 저정도면 괜찮음. 
+2. 다만 work flow 섹션에서 slack 관련 연동 정보가 아직 미비되었고, 프로젝트 상태를 나타내기 위한 Dashboard 가 부족하다. 인프라는 더욱이 그림이 안 잡힌다.
+3. 프로젝트 slack 연동 정보 찾기
+4. 프로젝트 상태 관련 대쉬보드 중 CI Status 는 [여기](https://github.com/cypress-io/cypress-example-kitchensink) 를 참고하나, 일단은 프로젝트를 진행하면서 진정 필요한게 뭔지 가슴으로 느끼는 시간을 가지면 될듯 하다.
+5. 정리된 work flow 를 바탕으로 진짜 루틴하게 효율적으로 일 할 수 있는 순서를 어느정도 구상해 놓아야 될듯 싶다. 진짜 말로만 열심히 한다 자신하는 구조가 아닌, 어느 누구라도 부담없이 일에 집중할 수 있는 구조로.
+6. 인프라 관련해서는 다시한번 여러 블로그나 [https://devfolio.kr](https://devfolio.kr/) 돌아다니면서 수집해보도록 하자. 규모는 작지언정 역할분리의 측면에서 나름 현업에 견줄만하게 준수한 정도였으면 좋겠다.
+- 수요일: 회식이 있으므로, 가장 간단한 3번 진행
+- 목요일: 4, 6
+- 금요일: 5
+
+정보수집 중 남는시간이 있으면 Mobx 후다닥 공부하기~
