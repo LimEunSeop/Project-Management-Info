@@ -61,9 +61,7 @@ HTML, CSS, ES6+, Typescript
 3. 프로젝트 slack 연동 정보 찾기 - Git commit 알림, CI/CD 파이프라인 Status 정도 알리는 기능이면 충분할듯. 나중에 더 필요하면 붙여 나가는 식으로 하자
 4. 프로젝트 상태 관련 대쉬보드 중 CI Status 는 [여기](https://github.com/cypress-io/cypress-example-kitchensink) 를 참고하나, 일단은 프로젝트를 진행하면서 진정 필요한게 뭔지 느끼는 시간을 가지면 될듯 하다. - github [README.md](http://README.md) 에 딱히 상태를 관리할 필요는 없는듯 하다. 프로젝트 참여자들 끼리 slack 채널에서 보이도록 하기만 하면 충분하지 않을까? 아니다. 그래도 slack 에서 본다면 알림으로서는 충분하지만 대쉬보드로서의 기능이 떨어질것 같음.. 프로젝트에 관여하는 플랫폼으로의 링크를 README.md 에 표시하면 난 좋을것 같다. README.md 에 대쉬보드로서 한눈에 전체 프로세스를 볼 수 있도록 하고 클릭하면 그 플랫폼의 상세를 볼 수 있도록.
 5. ~~정리된 work flow 를 바탕으로 진짜 루틴하게 효율적으로 일 할 수 있는 순서를 어느정도 구상해 놓아야 될듯 싶다. 진짜 말로만 열심히 한다 자신하는 구조가 아닌, 어느 누구라도 부담없이 일에 집중할 수 있는 구조로.~~
-6. 인프라 관련해서는 다시한번 여러 블로그나 [https://devfolio.kr](https://devfolio.kr/) 돌아다니면서 수집해보도록 하자. 규모는 작을지언정 역할분리의 측면에서 나름 현업에 견줄만하게 준수한 정도였으면 좋겠다.
-- 수요일: 회식이 있으므로, 가장 간단한 3번 진행
-- 목요일: 4
-- 금요일: 6
+6. 인프라 관련해서는 다시한번 여러 블로그나 [https://devfolio.kr](https://devfolio.kr/) 돌아다니면서 수집해보도록 하자. 규모는 작을지언정 역할분리의 측면에서 나름 현업에 견줄만하게 준수한 정도였으면 좋겠다. - Storage Service: [Amazon S3](https://aws.amazon.com/ko/s3/), [Cloudinary](https://cloudinary.com). API Server: AWS API Gateway, [AWS Lambda](https://aws.amazon.com/ko/lambda/), [AWS EC2 vs AWS Lightsail](https://devlog.jwgo.kr/2020/06/21/ec2-vs-lightsail/), DB: NoSQL([AWS DynamoDB vs AWS DocumentDB](https://jane-aeiou.tistory.com/57)), RDB([AWS RDS](https://us-west-2.console.aws.amazon.com/rds/home?region=us-west-2)). 프론트엔드 서비스 방법은?? 
+7. 프론트엔드를 AWS Lambda에 배포하는 방법, CI/CD 파이프라인 구축방법 찾기
 
 정보수집 중 남는시간이 있으면 Mobx 후다닥 공부하기~
